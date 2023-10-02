@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FrancisCorp-chinelas</title>
+    <link rel="stylesheet" href="css/homepage.css">
+</head>
+<body>
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+    </div>
+    <div class="navbar ">
+        <div class="content-header ">
+            <h1 class="logo">Francis<span>Corp</span></h1>
+            <nav>
+                <ul>
+                    <a  target="_blank"href="http://127.0.0.1:5501/home_page.html"><li>Inicio</li></a>
+                    <a id="about"target="_parent"href="#info"><li>Sobre</li></a>
+                    <a id="membros-time"href="#members"><li>Membros</li></a>
+                    <a id="contacts"href="#members"><li>Contato</li></a>
+                </ul>
+            </nav>
+            <div class="nav-inner-container">
+                <img src="img/menu.png" alt="" class="menu-button">
+            </div>
+        </div>
+
+        <div>
+            <div id="grupos"class="page-content">
+                <h3 id="grupos"class="titulo-do-grupo">Chinelas</h3>
+                <div class="subtitulo-linha"></div>
+                <div class="columns columns-4">
+                    <div>
+                        <a href="#"><img src="img/chinelas.jpg" alt="" class="chinelas"></a>
+                        <p class="group-name">Chinelas</p>
+                        <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9733; 
+                        <p class="description">Chinelas de qualidade</p>
+                    </div>
+                    <div>
+                        <img src="img/tecnologia.jpg" alt="">
+                        <p class="group-name">Produtos tecnológicos</p>
+                        <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+                        <p class="description">Aparelhos tecnológicos, como: <br>carregadores, fones e etc</p>
+                    </div>
+                    <div>
+                        <img src="img/material.jpg" alt="">
+                        <p class="group-name">Material escolar</p>
+                        <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+                        <p class="description">Aqui é possível encontrar materiais utéis <br>no cotidiano escolar</p>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+
+        
+
+    <script>
+        const navbar = document.querySelector(".navbar");
+        const Menubutton = document.querySelector(".menu-button");
+
+        Menubutton.addEventListener("click", ()=> {
+            navbar.classList.toggle("show-menu");
+        })
+    </script>
+    <script src="js/animated.js"></script>
+    
+</body>
+</html>
